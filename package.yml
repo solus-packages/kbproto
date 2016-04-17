@@ -1,0 +1,18 @@
+name        : kbproto
+version     : 1.0.7
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/kbproto-1.0.7.tar.gz : 828cb275b91268b1a3ea950d5c0c5eb076c678fdf005d517411f89cc8c3bb416
+license     :
+    - MIT
+summary     : X Keyboard Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This extension defines a protcol to provide a number of new capabilities and controls for text keyboards.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
